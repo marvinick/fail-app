@@ -17,3 +17,11 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'twitter-bootstrap-rails'
 gem "therubyracer"
 gem "less-rails"
+
+group :development do
+  gem 'sqlite3'
+end
+
+group :deploy do
+  gem 'pg'
+end
