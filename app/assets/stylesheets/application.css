@@ -71,10 +71,6 @@
   /* Adds the transparent background */
   background-color: rgba(1, 1, 1, 0.8);
   color: rgba(1, 1, 1, 0.8);
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   top: 2px;
 }
 
@@ -110,7 +106,7 @@
 }
 
 body {
-  padding-top: 150px;
+  padding-top: 2px;
   margin: 0;
   background-color: #FF6103;
 }
