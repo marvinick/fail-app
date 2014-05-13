@@ -9,7 +9,7 @@ Seasalt::Application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
-  # Disable Rails's static asset server (Apache or nginx will already do this)
+  # Disable Rails's static asset server
   config.serve_static_assets = true
 
   # Show full error reports and disable caching.

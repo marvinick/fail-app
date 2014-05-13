@@ -1,0 +1,15 @@
+<h4>Register</h4>
+  <%= form_for @user do |f| %>
+    <tr>
+      <div class='control-group'>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :email %>
+        <%= f.text_field :email, class: "form-register" %>
+      </div>
+
+        <%= f.submit @user.new_record? ? "Register" : "Update Note", class: 'btn btn-success' %>
+  <% end %>
+  </div>

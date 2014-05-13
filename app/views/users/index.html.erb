@@ -2,41 +2,27 @@
 <html lang="en-US">
 
 <head>
-  <link rel="stylesheet" href="application.css" type="text/css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0", user-scalable=no" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Seasalt Dev Hen</title>
 </head>
 
 <body>
-  <div id="navigation">
+  <div id="sticky">
     <a href="#">Home</a>
-    <a href="#">Portfolio</a>
+    <a href="#">Stories</a>
     <a href="#">Contact</a>
   </div>
   <div class="main">
     <h2>
-      Seasalt Dev Hen
+      Got failure?
     </h2>
     <h4>
-      We are an independent web app developer, located in various locations throughout the globe.
+      Most people like to brag about their successes. Not failures. But most successful people learn from their failures.
     </h4>
   </div>
   <div class="first">
-    <h2>
-      Portfolio
-    </h2>
-    <h5><ul>
-      <li>Muvi</li>
-      <li>Click2</li>
-      <li>itrsushibar</li>
-      <li>seasaltdev</li>
-    </ul></h5>
+    <h5>
+      <%= render "form" %>
+    </ul>
   </div>
-  <div class="second">
-    <h3>Tom Preston-Werner home</h3>
-    <h4>Ten Lessons from GitHub’s First Year</h4>
-
-      <h4>Start Early</h4>
-      <h3>When Chris and I started working on GitHub in late 2007, Git was largely unknown as a version control system. Sure, Linux kernel hackers had been using it since day one, but outside of that small microcosm, it was rare to come across a developer that was using it on a day-to-day basis. I was first introduced to Git by Dave Fayram, a good friend and former coworker during my days at Powerset. Dave is the quintessential early adopter and, as far as I can calculate, patient zero for the spread of Git adoption in the Ruby community and beyond. Back then, the Git landscape was pretty barren. Git had only recently become usable by normal people with the 1.5 release. As for Git hosting, there was really only repo.or.cz, which felt to me very limited, clumsy, and poorly designed. There were no commercial Git hosting options whatsoever. Despite this, people were starting to talk about Git at the Ruby meetups. About how awesome it was. But something was amiss. Git was supposed to be this amazing way to work on code in a distributed way, but what was the mechanism to securely share private code? Your only option was to setup user accounts on Unix machines and use that as an ad-hoc solution. Not ideal.And so GitHub was born. But it was born into a world where there was no existing market for paid Git hosting. We would be creating the market. I vividly remember telling people, “I don’t expect GitHub to succeed right away. Git adoption will take a while, but we’ll be ready when it happens.” Neither Chris nor I were in any particular hurry for this to happen. I was working full time at Powerset, and he was making good money as a Rails consultant. By choosing to build early on top of a nascent technology, we were able to construct a startup with basically no overhead, no competition, and in our free time.<hh3>
-    </div>
 </body>
