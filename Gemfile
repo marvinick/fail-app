@@ -19,8 +19,17 @@ gem 'twitter-bootstrap-rails'
 gem "therubyracer"
 gem "less-rails"
 
+group :test do
+  gem 'capybara'
+  gem 'rspec'
+end
+
 group :development do
   gem 'sqlite3'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
 end
 
 group :production do
