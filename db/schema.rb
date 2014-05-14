@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140513195912) do
+ActiveRecord::Schema.define(version: 20140514123816) do
+
+  create_table "stories", force: true do |t|
+    t.text     "story"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"
