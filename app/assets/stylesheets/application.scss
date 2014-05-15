@@ -18,7 +18,7 @@
   width: 100%;
   text-align: center;
   color: #282828;
-  background-color: #388E8E;
+  background-color: #54FF9F;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -31,7 +31,7 @@
   width: 100%;
   text-align: center;
   color: #282828;
-  background-color: #F8F8FF;
+  background-color: #FFFAF0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -45,7 +45,7 @@
   width: 100%;
   text-align: center;
   color: #282828;
-  background-color: #CD3700;
+  background-color: #FFA500;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -56,10 +56,10 @@
   margin: 0px;
   position: fixed;
   top: 0;
-  color: #ffffff;
+  color: #FFA500;
   width: 100%;
   height: 45px;
-  text-align: center;
+  text-align: right;
   padding-top: 15px;
   /* Adds shadow to the bottom of the bar */
   -webkit-box-shadow: 0px 0px 15px 0px #000000;
@@ -72,7 +72,7 @@
 
 #sticky a {
   font-size: 15px;
-  padding-left: 0px;
+  padding-left: 30px;
   padding-right: 30px;
   color: white;
   text-decoration: none;
@@ -84,7 +84,7 @@
 }
 
 body {
-  padding-top: 0px;
+  padding-top: 60px;
   margin: 0;
   background-color: #FF6103;
 }

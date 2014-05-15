@@ -1,0 +1,10 @@
+<h4>Enter your story</h4>
+  <%= form_for @story do |f| %>
+    <tr>
+      <div class='control-group'>
+        <%= f.label :story %>
+        <%= f.text_area :story, rows: 8%>
+      </div>
+  <%= f.submit @story.new_record? ? "Tell your Story" : "Update your Story", class: 'btn btn-success' %>
+  <% end %>
+  </div>

@@ -9,3 +9,4 @@ feature "User signup" do
     expect(page).to have_content @users
   end
 end
+
