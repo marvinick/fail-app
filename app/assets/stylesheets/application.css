@@ -1,3 +1,6 @@
+
+@import "twitter/bootstrap/responsive";
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -17,8 +20,8 @@
   padding: 100px 0px;
   width: 100%;
   text-align: center;
-  color: #282828;
-  background-color: #54FF9F;
+  color: #DCDCDC;
+  background-color: #2B2B2B;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -30,8 +33,8 @@
   padding: 100px 0px;
   width: 100%;
   text-align: center;
-  color: #282828;
-  background-color: #FFFAF0;
+  color: #D3D3D3;
+  background-color: #282828;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -44,8 +47,8 @@
   margin-right: 0px;
   width: 100%;
   text-align: center;
-  color: #282828;
-  background-color: #FFA500;
+  color: ##292421;
+  background-color: #EEE9E9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -66,7 +69,7 @@
   -moz-box-shadow: 0px 0px 15px 0px #000000;
   box-shadow: 0px 0px 15px 0px #000000;
   /* Adds the transparent background */
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(1, 1, 1, 1);
   color: rgba(1, 1, 1, 0.8);
 }
 
@@ -84,8 +87,12 @@
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 47px;
   margin: 0;
   background-color: #FF6103;
 }
+
+.control-group {
+  color: white;
+  }
 

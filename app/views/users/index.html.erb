@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -8,21 +8,46 @@
 
 <body>
   <div id="sticky">
-    <a href="#">Home</a>
-    <a href="#">Stories</a>
-    <a href="#">Contact</a>
+    <a href="#">About</a>
+    <a href="#">For Employers</a>
+    <a href="#">Support us</a>
+
   </div>
   <div class="main">
-    <h2>Got failure?</h2>
-    <h4>Most people like to brag about their successes. Not failures. But most successful people learn from failures.</h4>
-  </div>
-  <div class="first">
-    <%= render "form" %>
+    <h2>Simplify the hiring process by showing what you can ACTUALLY do</h2>
+    <h2>Showcase your talent</h2>
   </div>
   <div class="second">
-    <h3>Recent Stories</h3>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Simplify</h3>
+          <p>One look at your profile, employers know what to expect</p>
+          <p><a href="#">Learn more</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Build your resume</h3>
+          <p>Action speaks volume, the more you put your accomlishments out there, the higher the chance </p>
+          <p><a href="#">From one place</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Public or Private</h3>
+          <p>Whether you want other people to see your profile or not, you are in control</p>
+          <p><a href="#">Learn about trust at Seasalt</a></p>
+        </div>
+      </div>
+    </div>
   </div>
-
+  <div class="first">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Create your profile now, and make some edits later.</h3>
+          <h4>And when you are ready, <strong>publish</strong> it for others to see</h4>
+        </div>
+        <div class="col-lg-3">
+          <%= link_to "Create Profile", new_user_path(@user), class: "btn btn-success" %>
+          </div>
+  </div>
 
 </body>
