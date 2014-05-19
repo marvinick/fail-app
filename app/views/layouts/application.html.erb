@@ -13,10 +13,19 @@
 </head>
   <body>
     <div id="sticky">
-      <a href="#">About</a>
-      <a href="#">Sign in</a>
-      <a href="#">For Employers</a>
-      <a href="#">Support us</a>
+      <div class="container">
+        <div class"row">
+          <div class="col-md-6">
+            <%= link_to "goSeaSalt", root_path, :class => 'brand' %>
+          </div>
+          <div class="col-md-6">
+            <a href="#">About</a>
+            <a href="#">Employee</a>
+            <a href="#">Employers</a>
+            <a href="#">Support us</a>
+          </div>
+        </div>
+      </div>
     </div>
     <%= yield %>
 
