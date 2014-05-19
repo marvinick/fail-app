@@ -1,0 +1,108 @@
+@import "twitter/bootstrap/responsive";
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.main {
+  height: 75%;
+  padding: 100px 0px;
+  width: 100%;
+  text-align: center;
+  color: #DCDCDC;
+  background-color: #2B2B2B;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.first {
+  height: 100%;
+  padding: 100px 0px;
+  width: 100%;
+  text-align: center;
+  color: #D3D3D3;
+  background-color: #282828;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.second {
+  height: 100%;
+  padding: 100px 0px;
+  margin-right: 0px;
+  width: 100%;
+  text-align: center;
+  color: ##292421;
+  background-color: #EEE9E9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#sticky {
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  color: #FFA500;
+  width: 100%;
+  height: 55px;
+  text-align: right;
+  padding-top: 15px;
+  /* Adds shadow to the bottom of the bar */
+  -webkit-box-shadow: 0px 0px 15px 0px #000000;
+  -moz-box-shadow: 0px 0px 15px 0px #000000;
+  box-shadow: 0px 0px 15px 0px #000000;
+  /* Adds the transparent background */
+  background-color: rgba(1, 1, 1, 1);
+  color: rgba(1, 1, 1, 0.8);
+}
+
+#sticky a {
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+}
+
+#sticky a:hover {
+  color: grey;
+}
+
+body {
+  padding-top: 55px;
+  margin: 0px;
+}
+
+.control-group {
+  color: black;
+  }
+
+.third {
+  padding-left: 55px
+  }
+
+.form {
+  font-size: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: left;
+
+}
+
