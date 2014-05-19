@@ -2,47 +2,36 @@
   <center>Enter your info here</center>
   <hr/>
   <%= form_for @user do |f| %>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class='control-group'>
-            <%= f.label :name %>
-            <%= f.text_field :name, class: "form-register" %>
-          </div>
-          <div class='control-group'>
-            <%= f.label :email %>
-            <%= f.text_field :email, class: "form-register" %>
-          </div>
-           <div class='control-group'>
-            <%= f.label :password %>
-            <%= f.text_field :password_digest, class: "form-register" %>
-          </div>
-        </div>
+      <div class='control-group'>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-register" %>
       </div>
-    </div>
+      <div class='control-group'>
+        <%= f.label :email %>
+        <%= f.text_field :email, class: "form-register" %>
+      </div>
+       <div class='control-group'>
+        <%= f.label :password %>
+        <%= f.text_field :password_digest, class: "form-register" %>
+      </div>
     <hr/>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class='control-group'>
-            <%= f.label :job_title %>
-            <%= f.text_field :job_title, class: "form-register" %>
-          </div>
-          <div class='control-group'>
-            <%= f.label :education %>
-            <%= f.text_field :education , class: "form-register" %>
-          </div>
-          <div class='control-group'>
-            <%= f.label :birthday %>
-            <%= f.text_field :birthday, class: "form-register" %>
-          </div>
-          <div class='control-group'>
-            <%= f.label :story %>
-            <%= f.text_field :story , class: "form-register" %>
-          </div>
-        </div>
+      <div class='control-group'>
+        <%= f.label :job_title %>
+        <%= f.text_field :job_title, class: "form-register" %>
       </div>
-    </div>
-        <center><%= f.submit @user.new_record? ? "Register" : "Update Note", class: 'btn btn-success btn-lg' %></center>
+      <div class='control-group'>
+        <%= f.label :education %>
+        <%= f.text_field :education , class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :birthday %>
+        <%= f.text_field :birthday, class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :story %>
+        <%= f.text_area :story , class: "form-register" %>
+      </div>
+    <hr/>
+        <center><%= f.submit @user.new_record? ? "Sign up" : "Update Note", class: 'btn btn-success btn-lg' %></center>
   <% end %>
 </div>
