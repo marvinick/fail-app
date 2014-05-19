@@ -7,15 +7,10 @@
 </head>
 
 <body>
-  <div id="sticky">
-    <a href="#">About</a>
-    <a href="#">For Employers</a>
-    <a href="#">Support us</a>
-
-  </div>
   <div class="main">
     <h2>Simplify the hiring process by showing what you can ACTUALLY do</h2>
     <h2>Showcase your talent</h2>
+   <h1> <%= link_to "Browse", new_user_path(@user), class: "btn btn-success btn-lg" %></h1>
   </div>
   <div class="second">
     <div class="container">
@@ -26,8 +21,8 @@
           <p><a href="#">Learn more</a></p>
         </div>
         <div class="col-lg-4">
-          <h3>Build your resume</h3>
-          <p>Action speaks volume, the more you put your accomlishments out there, the higher the chance </p>
+          <h3>Use your favorite social media</h3>
+          <p>Twitter, Facebook, Instagram, Flickr. If you already have pictures or videos on one of those sites, all you have to do is to connect them with your profile </p>
           <p><a href="#">From one place</a></p>
         </div>
         <div class="col-lg-4">
@@ -46,8 +41,7 @@
           <h4>And when you are ready, <strong>publish</strong> it for others to see</h4>
         </div>
         <div class="col-lg-3">
-          <%= link_to "Create Profile", new_user_path(@user), class: "btn btn-success" %>
+          <%= link_to "Create Profile", new_user_path(@user), class: "btn btn-success btn-lg" %>
           </div>
   </div>
-
 </body>

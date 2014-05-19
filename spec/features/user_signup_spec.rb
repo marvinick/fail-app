@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature "User signup" do
   scenario "User sign up with valid info" do
-    visit users_path
+    visit new_user_path
     fill_in "Name", with: "Marvin"
     fill_in "Email", with: "daddy@daddy.com"
     fill_in "Job Title", with: "chef"

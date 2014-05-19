@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514123816) do
+ActiveRecord::Schema.define(version: 20140519005414) do
 
   create_table "stories", force: true do |t|
     t.text     "story"
@@ -24,6 +24,11 @@ ActiveRecord::Schema.define(version: 20140514123816) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "job_title"
+    t.integer  "birthday"
+    t.string   "education"
+    t.string   "story"
+    t.string   "password_digest"
   end
 
 end

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SeaSaltStudio</title>
+  <title>goseasalt</title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,10 +9,16 @@
    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
 
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
   <%= yield(:head) %>
 </head>
   <body>
+    <div id="sticky">
+      <a href="#">About</a>
+      <a href="#">Sign in</a>
+      <a href="#">For Employers</a>
+      <a href="#">Support us</a>
+    </div>
     <%= yield %>
+
   </body>
 </html>
