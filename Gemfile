@@ -24,12 +24,9 @@ group :test do
   gem 'rspec'
 end
 
-group :development do
-  gem 'sqlite3'
-end
-
 group :development, :test do
   gem 'rspec-rails'
+   gem 'sqlite3'
 end
 
 group :production do

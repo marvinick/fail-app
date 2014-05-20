@@ -89,6 +89,10 @@ body {
   margin: 0px;
 }
 
+.well {
+ padding-left: 30px;
+ }
+
 .control-group {
   color: black;
   }
