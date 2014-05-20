@@ -9,7 +9,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+
     if @user.save
+      session[:user_id] = @user.id
+      flash[:notice] = "You just signed up"
       redirect_to user_path(@user)
     else
       render :new
@@ -25,6 +28,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :job_title, :birthday, :story, :education, :password_digest)
+    params.require(:user).permit(:name, :email, :job_title, :birthday, :story, :education, :password)
   end
 end
