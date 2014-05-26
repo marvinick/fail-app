@@ -1,5 +1,9 @@
-<div class="third">
-<h3>Profile</h3>
-    <%= @user.name %>
-    <%= link_to "Edit", edit_user_path %>
-</div>
+<body>
+  <div class="third">
+    <h3>Profile</h3>
+        <%= @user.name %>
+        <%= image_tag @user.image_url(:thumb).to_s %>
+        <%= @user.job_title %>
+        <%= link_to "Edit", edit_user_path %>
+  </div>
+</body>
