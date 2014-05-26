@@ -23,6 +23,19 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def edit
+   @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+
+    if @user.save
+      flash[:notice] = "Your profile has been updated"
+    else
+      render :edit
+    end
+  end
 
   private
 
