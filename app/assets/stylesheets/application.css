@@ -54,6 +54,10 @@
   -o-background-size: cover;
 }
 
+.third {
+  padding-left: 20px;
+}
+
 #sticky {
   margin: 0px;
   position: fixed;
