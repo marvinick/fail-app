@@ -4,5 +4,6 @@ class User < ActiveRecord::Base
 
   has_secure_password validations: false
 
-  mount_uploader :image, ImageUploader
+  mount_uploader :avatar, ImageUploader
+
 end

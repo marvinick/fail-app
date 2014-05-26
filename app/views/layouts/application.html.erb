@@ -19,7 +19,7 @@
             <%= link_to "goSeaSalt", root_path, :class => 'brand' %>
           </div>
           <div class="col-md-6">
-            <a href="#">About</a>
+            <%= link_to 'About', stories_path(@story) %>
             <a href="#">Employers</a>
             <%= link_to 'Signup', new_user_path  %>
             <%= link_to "Login", login_path %>
