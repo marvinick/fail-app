@@ -1,9 +1,23 @@
 <body>
   <div class="third">
-    <h3>Profile</h3>
-        <%= @user.name %>
-        <%= image_tag @user.image_url(:thumb).to_s %>
-        <%= @user.job_title %>
-        <%= link_to "Edit", edit_user_path %>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Profile</h2>
+          <h3><ul>
+            <li>Name : <%= @user.name %></li>
+            <li>Title : <%= @user.job_title %></li>
+            <li>Education : <%= @user.education %></li>
+            <li>Birthday : <%= @user.birthday %></li>
+            <li>Goals : <%= @user.story %></li>
+            <%= link_to "Edit", edit_user_path %>
+            <%= link_to "List", stories_path %>
+          </ul></h3>
+        </div>
+        <div class="col-lg-6">
+          <%= image_tag @user.image_url(:thumb).to_s %>
+        </div>
+      </div>
+    </div>
   </div>
 </body>

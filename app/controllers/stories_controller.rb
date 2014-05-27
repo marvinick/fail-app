@@ -2,6 +2,7 @@ class StoriesController < ApplicationController
   def index
     @stories = Story.all
     @story = Story.new
+    @users = User.all
   end
 
   def new
@@ -17,6 +18,10 @@ class StoriesController < ApplicationController
     end
   end
 
+  def edit
+    @story = Story.find(params[:id])
+    @user = User.find(params[:id])
+  end
   private
 
   def story_params

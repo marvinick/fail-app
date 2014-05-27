@@ -650,3 +650,35 @@ Processing by UsersController#create as HTML
   Rendered users/new.html.erb within layouts/application (6.6ms)
 Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.2ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/users/new" for 127.0.0.1 at 2014-05-26 13:34:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (34.2ms)
+  Rendered users/new.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 105ms (Views: 52.7ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/users/new" for 127.0.0.1 at 2014-05-26 15:50:59 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (33.8ms)
+  Rendered users/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 107ms (Views: 53.6ms | ActiveRecord: 0.5ms)
+Started POST "/users" for 127.0.0.1 at 2014-05-26 15:50:59 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Marvin", "email"=>"daddy@daddy.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (48.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 26 May 2014 20:50:59 UTC +00:00], ["email", "daddy@daddy.com"], ["name", "Marvin"], ["password_digest", "$2a$04$S9AaerjhgC6GgeM8FBZwGO0QenfP9u7UgY7afXiph/9xLr7MXwmUu"], ["updated_at", Mon, 26 May 2014 20:50:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 56ms (ActiveRecord: 48.7ms)
+Started GET "/users/1" for 127.0.0.1 at 2014-05-26 15:50:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m

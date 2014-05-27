@@ -38,6 +38,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def remove
+    @user = User.find(params[:id])
+    if @user.destroy
+      redirect_to stories_path
+    end
+  end
+
   private
 
   def user_params
