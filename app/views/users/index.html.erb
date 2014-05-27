@@ -10,7 +10,7 @@
   <div class="main">
     <h2>Simplify the hiring process by showing what you can ACTUALLY do</h2>
     <h2>Showcase your talent</h2>
-   <h1> <%= link_to "Browse", new_user_path(@user), class: "btn btn-success btn-lg" %></h1>
+   <h1> <%= link_to "Sign up", new_user_path(@user), class: "btn btn-success btn-lg" %></h1>
   </div>
   <div class="second">
     <div class="container">
@@ -47,8 +47,18 @@
     </div>
   </div>
   <footer class="footer">
-    <p>developed by: Seasalt Studio</p>
-    <p>Contact: <a href="mailto:someone@example.com">
-       someone@example.com</a>.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>developed by: Seasalt Studio</p>
+        </div>
+        <div class="col-md-3">
+          <p>Contact: <a href="mailto:someone@example.com"><a>
+        </div>
+        <div class="col-md-3">
+          <%= link_to 'About', stories_path(@story) %>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>

@@ -122,12 +122,16 @@ body {
   padding-left: 20px;
   background: #D4D4D4;
   text-align: center;
-  padding-bottom:10px ;
+  padding-bottom: 5px;
   padding-top: 20px;
   color: black;
 }
 
 .col-lg-6 {
   padding-top: 30px;
+}
+
+.row {
+  padding-bottom: 50px;
 }
 

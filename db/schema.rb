@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140522210712) do
+ActiveRecord::Schema.define(version: 20140527014817) do
 
   create_table "employers", force: true do |t|
     t.string   "name"
@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(version: 20140522210712) do
     t.string   "story"
     t.string   "password_digest"
     t.string   "image"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "image4"
+    t.string   "image5"
   end
 
 end

@@ -34,10 +34,23 @@
       <div class='control-group'>
         <%= f.file_field :image, class: "form-register"  %>
       </div>
+      <div class='control-group'>
+        <%= f.file_field :image2, class: "form-register"  %>
+      </div>
+      <div class='control-group'>
+        <%= f.file_field :image3, class: "form-register"  %>
+      </div>
+      <div class='control-group'>
+        <%= f.file_field :image4, class: "form-register"  %>
+      </div>
+      <div class='control-group'>
+        <%= f.file_field :image5, class: "form-register"  %>
+      </div>
       <div class='control-group>'>
         <%= f.label :remote_image_url, "or image URL" %>
         <%= f.text_field :remote_image_url %>
       </div>
+
       <hr/>
     <center><%= f.submit @user.new_record? ? "Sign up" : "Update", class: 'btn btn-success btn-lg' %></center>
     <% end %>
